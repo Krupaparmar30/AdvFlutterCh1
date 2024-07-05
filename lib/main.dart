@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main()
@@ -23,22 +22,18 @@ class _MyAppState extends State<MyApp> {
       darkTheme: ThemeData.dark(),
       themeMode: isDark?ThemeMode.dark:ThemeMode.light,
       home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: Text("Theme Data"),
 
-        ),
         body: Center(
           child: Column(
             children: [
               SizedBox(
-                height: height*0.1,
+                height: height*0.150,
               ),
-              Text('Yo Man!',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
+              Text('Yo Man!',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40),),
               SizedBox(
                 height: height*0.050,
               ),
-              Text("It's a simple example of dark theme",style: TextStyle(fontSize: 18,color: Colors.grey.shade400),),
+              Text("It's a simple example of\n            dark theme",style: TextStyle(fontSize: 22,color: Colors.grey.shade600),),
               SizedBox(
                 height: height*0.1,
               ),
@@ -50,13 +45,14 @@ class _MyAppState extends State<MyApp> {
                 },
                 child: Container(
                   height: height*0.1,
-                  width: width*0.2,
+                  width: width*0.7,
                   decoration: BoxDecoration(
                     color: Colors.yellowAccent,
                     borderRadius: BorderRadius.circular(10)
                   ),
                   child: Center(child: Text("Light Icon",style: TextStyle(
-                    color: Colors.black
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18
                   ),)),
                 ),
               ),
@@ -71,13 +67,13 @@ class _MyAppState extends State<MyApp> {
                 },
                 child: Container(
                   height: height*0.1,
-                  width: width*0.2,
+                  width: width*0.7,
                   decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(10)
                   ),
                   child: Center(child: Text("Dark Icon",style: TextStyle(
-                    color: Colors.black
+                 fontWeight: FontWeight.bold,fontSize: 18,
                   ),)),
                 ),
               )

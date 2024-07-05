@@ -10,10 +10,9 @@ ThemeData.light()
 // This uses to provaide default light theme.
 
 darkTheme: ThemeData.dark()
-
 //  This uses to provaide dark theme.
-themeMode:ThemeMode.system
 
+themeMode:ThemeMode.system
 // This uses to provadie the system theme.
 //like system color light to the page color light and like system color dark to the page color dark
 

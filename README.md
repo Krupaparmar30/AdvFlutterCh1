@@ -1,5 +1,7 @@
 # adv_flutter_ch1
 
+* By setting the ThemeData in the MaterialApp widget, you effectively define a default theme for your app. This theme will be automatically applied to all the widgets in the Flutter app, ensuring a consistent look throughout. However, if needed, you can still override this default theme at a specific widget level.
+
 A new Flutter project.
 
 <p>
